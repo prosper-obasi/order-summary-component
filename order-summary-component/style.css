@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('./images/pattern-background-desktop.svg') no-repeat center center/cover;
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card{
+  width: 350px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card img{
+  width: inherit;
+  border-radius: 15px 15px 0 0;
+  padding-bottom: 1rem;
+}
+
+h2{
+  padding: 1rem;
+}
+
+.card p{
+  padding: 1rem 1.7rem;
+  color: #ada6a6;
+  font-size: 16px;
+}
+
+/* cancel order */
+.card a {
+  text-decoration: none;
+  color: #ada6a6;
+  font-weight: 900;
+}
+
+.card a:hover{
+  color: #555;
+}
+
+.plan-container{
+  border-radius: 10px;
+  justify-content: space-between;
+  display: flex;
+  margin: 2rem;
+  background-color: hsl(225, 98%, 98%);
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.price-container{
+  display: flex;
+}
+
+.price-container .text-wrap p{
+  padding: 0.7rem;
+}
+
+.plan-container a{
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+.plan-container a:hover{
+  color: hsl(245, 56%, 64%);
+  text-decoration: none;
+}
+
+.submit {
+  margin: auto 2rem 2rem 1rem;
+  display: inline-block;
+  width: 90%;
+  padding: 1rem;
+  color: #fff;
+  background: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 15px hsla(226, 23%, 55%, 0.925);
+}
+
+.submit:hover{
+  cursor: pointer;
+  background: hsl(245, 56%, 64%);
+}
+
+@media(max-width: 375px){
+  body{
+    width: 315px;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
